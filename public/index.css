@@ -1,0 +1,115 @@
+.report_btn {
+    position: relative;
+    padding: 0;
+    width: 100px; /* Smaller width */
+    height: 100px; /* Smaller height */
+    border: 2px solid #888888;
+    outline: none;
+    background-color: #f4f5f6;
+    border-radius: 20px; /* Adjusted border-radius */
+    box-shadow:
+      -3px -10px 15px #ffffff,
+      -3px -5px 8px #ffffff,
+      -10px 0px 15px #ffffff,
+      3px 10px 12px rgba(0, 0, 0, 0.2);
+    transition: 0.3s ease-in-out; /* Smooth animation */
+    cursor: pointer;
+  }
+  
+  /* Hover animation: Scaling the button and adjusting shadow */
+  .report_btn:hover {
+    transform: scale(1.1); /* Button grows slightly */
+    box-shadow:
+      -3px -15px 20px #ffffff,
+      -3px -10px 10px #ffffff,
+      -10px 0px 15px #ffffff,
+      5px 15px 15px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* Active click animation */
+  .report_btn:active {
+    transform: scale(0.95); /* Button shrinks slightly */
+    box-shadow: none; /* Shadow disappears when clicked */
+  }
+  
+  .report_btn-content {
+    position: relative;
+    display: grid;
+    padding: 10px; /* Smaller padding */
+    width: 100%;
+    height: 100%;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    box-shadow:
+      inset 0px -4px 0px #dddddd,
+      0px -4px 0px #f4f5f6;
+    border-radius: 20px;
+    transition: 0.3s ease-in-out; /* Smooth animation */
+    z-index: 1;
+  }
+  
+  /* Icon hover effect: Floating effect */
+  .report_btn-icon {
+    position: relative;
+    display: flex;
+    transform: translate3d(0px, -2px, 0px);
+    grid-column: 4;
+    align-self: start;
+    justify-self: end;
+    width: 16px; /* Smaller icon size */
+    height: 16px;
+    transition: 0.3s ease-in-out; /* Smooth hover animation */
+  }
+  
+  /* Hover effect on icon */
+  .report_btn:hover .report_btn-icon {
+    transform: translateY(-8px); /* Move the icon up slightly on hover */
+  }
+  
+  /* Icon styling */
+  .report_btn-icon svg {
+    width: 16px; /* Smaller icon */
+    height: 16px;
+    fill: #aaaaaa;
+  }
+  
+  /* Text hover effect: Floating effect */
+  .report_btn-text {
+    position: relative;
+    transform: translate3d(0px, -2px, 0px); /* Smaller translation */
+    margin: 0;
+    align-self: end;
+    grid-column: 1 / 5;
+    grid-row: 2;
+    text-align: center;
+    font-size: 16px; /* Smaller font size */
+    background-color: #888888;
+    color: transparent;
+    text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.5);
+    -webkit-background-clip: text;
+    background-clip: text;
+    transition: 0.3s ease-in-out;
+  }
+  
+  /* Hover effect on text */
+  .report_btn:hover .report_btn-text {
+    transform: translateY(-5px); /* Move the text up slightly on hover */
+  }
+  
+
+
+  /* @keyframes marquee {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+  
+  .marquee {
+    animation: marquee 10s linear infinite;
+  } */
+
+  
+  
